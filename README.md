@@ -1,1 +1,1 @@
-# ETL for earthquake data & send email (/days) using python + airflow
+# ETL for Earthquake Data & Send Email (/Days) Using Python + Airflow
