@@ -16,7 +16,7 @@ c. With terminal go to forlder airflow-docker and type docker-compose up airflow
 
 d. Please create database bmkg in your postgre server 
 
-![image](https://user-images.githubusercontent.com/55681442/170854762-c16f55e2-fc6f-4b85-b643-92a8887f64d2.png)
+![image](https://user-images.githubusercontent.com/55681442/170855032-7d1005c7-5b36-4303-86c0-e2223096a2fd.png)
 
 e. Open Airflow website in ip 0.0.0.0 using username airflow and password airflow
 ![image](https://user-images.githubusercontent.com/55681442/170854176-b6f25d26-30f5-476e-8d2e-dce550912de6.png)
@@ -26,6 +26,10 @@ f. in tab admin -> variabel import file var_bmkg.json but before you upload this
 ![image](https://user-images.githubusercontent.com/55681442/170854605-d4140e47-0a89-4dd4-b5f7-4ccd59edbafc.png)
 
 ![image](https://user-images.githubusercontent.com/55681442/170854613-441df54c-dea5-40a5-b45c-c8e3ab8bbfdd.png)
+
+g. Configure your email sender (@gmail.com) in setting less secure app setting
+
+![image](https://user-images.githubusercontent.com/55681442/170855260-97b79706-c45b-4fa6-8b63-23ce67594ef0.png)
 
 ## 2. Running and Testing DAG
 
@@ -38,6 +42,12 @@ b. If the DAG running well in graph view you will see all task in green border
 ![image](https://user-images.githubusercontent.com/55681442/170854762-c16f55e2-fc6f-4b85-b643-92a8887f64d2.png)
 
 c. If this DAG is running well you will see postgre database in table gempa will update and if you have new data you will get email (receiver_address) detail of eartquake 
+
+![image](https://user-images.githubusercontent.com/55681442/170855101-889df435-d87c-4c66-84ea-846dbc704c58.png)
+
+![image](https://user-images.githubusercontent.com/55681442/170855175-b2f9c9de-07c8-41f0-b9eb-6926abcdf807.png)
+
+
 
 
 
