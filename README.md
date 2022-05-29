@@ -10,8 +10,18 @@ This project using airflow, python and postgre. in Airflow have 7 task to run th
 
 a. Please install docker first before doing next step, this is step installation docker for ubuntu https://linuxhint.com/install_configure_docker_ubuntu/
 
-b. Copy folder airflow-docker to docker path for windows or linux copy in airflow-docker
+b. Copy file airflow-docker.zip and extract to docker path for windows or linux copy in airflow-docker
 
 c. With terminal go to forlder airflow-docker and type docker-compose up airflow-init
+
+d. Open Airflow website in ip 0.0.0.0 using username airflow and password airflow
+![image](https://user-images.githubusercontent.com/55681442/170854176-b6f25d26-30f5-476e-8d2e-dce550912de6.png)
+
+e. in tab admin -> variabel import file var_bmkg.json but before you upload this file please edit server ip (sync with ip postgre in your airflow), sender_address to email you want to send data bmkg, sender_pass is sender_address password. And receiver_address to email you want get data.
+
+![image](https://user-images.githubusercontent.com/55681442/170854605-d4140e47-0a89-4dd4-b5f7-4ccd59edbafc.png)
+
+![image](https://user-images.githubusercontent.com/55681442/170854613-441df54c-dea5-40a5-b45c-c8e3ab8bbfdd.png)
+
 
 
