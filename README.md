@@ -1,6 +1,6 @@
 # **ETL for Earthquake Data & Send Email (/Days) Using Python + Airflow**
 
-![image](https://user-images.githubusercontent.com/55681442/170829793-09501a7a-34ff-4046-a30c-7ab1f3caf774.png)
+![image](https://user-images.githubusercontent.com/55681442/170854762-c16f55e2-fc6f-4b85-b643-92a8887f64d2.png)
 
 This project contain ETL to get eartquake data from website data.bmkg.go.id and store data in postgre. If in the day data get have new earthquake data will sending data to email (in this case using gmail). Source data get from [https://data.bmkg.go.id/gempabumi/](https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.xml)
 
@@ -14,14 +14,33 @@ b. Copy file airflow-docker.zip and extract to docker path for windows or linux 
 
 c. With terminal go to forlder airflow-docker and type docker-compose up airflow-init
 
-d. Open Airflow website in ip 0.0.0.0 using username airflow and password airflow
+d. Please create database bmkg in your postgre server 
+
+![image](https://user-images.githubusercontent.com/55681442/170854762-c16f55e2-fc6f-4b85-b643-92a8887f64d2.png)
+
+e. Open Airflow website in ip 0.0.0.0 using username airflow and password airflow
 ![image](https://user-images.githubusercontent.com/55681442/170854176-b6f25d26-30f5-476e-8d2e-dce550912de6.png)
 
-e. in tab admin -> variabel import file var_bmkg.json but before you upload this file please edit server ip (sync with ip postgre in your airflow), sender_address to email you want to send data bmkg, sender_pass is sender_address password. And receiver_address to email you want get data.
+f. in tab admin -> variabel import file var_bmkg.json but before you upload this file please edit server ip (sync with ip postgre in your airflow), sender_address to email you want to send data bmkg, sender_pass is sender_address password. And receiver_address to email you want get data.
 
 ![image](https://user-images.githubusercontent.com/55681442/170854605-d4140e47-0a89-4dd4-b5f7-4ccd59edbafc.png)
 
 ![image](https://user-images.githubusercontent.com/55681442/170854613-441df54c-dea5-40a5-b45c-c8e3ab8bbfdd.png)
+
+## 2. Running and Testing DAG
+
+a. For trying DAG go to DAG tab search DAG_BMKG and click action run (Don't forget to unpause this DAG)
+
+![image](https://user-images.githubusercontent.com/55681442/170854670-9a42c20f-d46c-4c59-b8d3-2b058c77c0a6.png)
+
+b. If the DAG running well in graph view you will see all task in green border 
+
+![image](https://user-images.githubusercontent.com/55681442/170854762-c16f55e2-fc6f-4b85-b643-92a8887f64d2.png)
+
+c. If this DAG is running well you will see postgre database in table gempa will update and if you have new data you will get email (receiver_address) detail of eartquake 
+
+
+
 
 
 
