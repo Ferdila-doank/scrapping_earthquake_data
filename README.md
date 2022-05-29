@@ -27,7 +27,7 @@ f. in tab admin -> variabel import file var_bmkg.json but before you upload this
 
 ![image](https://user-images.githubusercontent.com/55681442/170854613-441df54c-dea5-40a5-b45c-c8e3ab8bbfdd.png)
 
-g. Configure your email sender (@gmail.com) in setting less secure app setting
+g. Configure your email sender (@gmail.com) in setting less secure app setting is on
 
 ![image](https://user-images.githubusercontent.com/55681442/170855260-97b79706-c45b-4fa6-8b63-23ce67594ef0.png)
 
