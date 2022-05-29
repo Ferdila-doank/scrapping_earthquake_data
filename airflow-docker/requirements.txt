@@ -1,7 +1,0 @@
-requests
-pandas
-sqlalchemy
-gdown
-xlrd
-pymysql
-openpyxl
